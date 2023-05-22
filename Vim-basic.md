@@ -12,13 +12,19 @@
 ### Editing Text
 
 - Insert mode:
-  - Press `i` in Normal mode to enter Insert mode for inserting and editing text.
+  - `i` - insert text before the cursor
+  - `O` - insert text on the previous line
+  - `o` - insert text on the next line
+  - `a` - append text after the cursor
+  - `A` - append text at the end of the line
   - Press `Esc` to exit Insert mode and return to Normal mode.
 - Deletion:
   - Use `x` to delete the character under the cursor.
   - `dd` deletes the current line.
 - Copy and Paste:
-  - `p` pastes the previously deleted or yanked text.
+  - `y` copy whatever is selected.
+  - `yy` copy the current line.
+  - `p` pastes the previously deleted or yanked/copied text.
 - Undo and Redo:
   - `u` undoes the last change, `Ctrl + r` redoes.
 
@@ -29,6 +35,8 @@
 - Quitting:
   - Use `:q` to quit Vim. If there are unsaved changes, it prompts to save first.
   - Use `:wq` to save and quit simultaneously.
+  - `:q!`to quit out of vim without saving the file
+  - `ZZ` is equivalent of `:wq`, but one character faster
 
 ### Search and Replace
 
